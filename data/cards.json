@@ -1,0 +1,22 @@
+[
+    {
+        "image": "../assets/Moon-01.svg", 
+        "name": "moon"
+    },
+    {
+        "image": "../assets/Star-01.svg", 
+        "name": "star"
+    },
+    {
+        "image": "../assets/Sun-01.svg", 
+        "name": "sun"
+    },
+        {
+        "image": "../assets/Sun-Stars-01.svg", 
+        "name": "sun-stars"
+    },
+    {
+        "image": "../assets/Sun-Moon-Stars-01.svg", 
+        "name": "sun-moon-stars"
+    }
+]

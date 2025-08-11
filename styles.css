@@ -1,0 +1,112 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&display=swap');
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: gray;
+    background-color: rgb(132, 132, 132);
+/* 
+    background-image: url("./assets/Stellar-Background.svg");
+     */
+    color: hsl(0, 0%, 10%);
+    font-family: 'Libre Franklin', sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+
+.actions{
+    display: flex;
+    justify-content: center;
+}
+.actions button{
+    font-size: 1.4rem;
+    padding: 8px 16px; 
+    border-radius: 10px;
+    background-color: black; 
+    color: white;
+}
+
+
+.thank-you-message{
+    font-family: 'Petit Formal Script', cursive;
+}
+.manualText {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+
+.grid-container {
+    background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+  padding: 12px;
+  /* center a div .... */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 700px; 
+  margin: 0 auto; 
+  /* /center */
+  perspective: 1000px; /* enables 3D look */
+}
+
+/* card box */
+.card {
+  position: relative;
+  width: 100%;
+  padding-top: 161px;       /* aspect ratio: height based on width */
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+
+.card .front,
+.card .back {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+}
+
+/* what you see initially */
+.card .back {
+  background: #111;        /* back design */
+  background-image: url("./assets/Stellar-Background.svg");
+  background-position: center;
+  transform: rotateY(0deg);
+}
+
+/* front is hidden initially */
+.card .front {
+  background: #000000;
+  display: grid;
+  place-items: center;
+  transform: rotateY(180deg);
+}
+
+.card .front img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* when flipped, rotate both faces */
+.card.flipped .back {
+  transform: rotateY(180deg);
+}
+.card.flipped .front {
+  transform: rotateY(0deg);
+}

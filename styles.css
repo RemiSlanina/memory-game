@@ -87,7 +87,8 @@ p{
 
 /* what you see initially */
 .card .back {
-  background: #111;        /* back design */
+  background: white;
+  background: hsl(0, 0%, 90%);
   background-image: url("./assets/Stellar-Background.svg");
   background-position: center;
   transform: rotateY(0deg);

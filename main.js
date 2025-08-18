@@ -44,7 +44,7 @@ function generateCards() {
         <img class="front-image" src=${card.image} /> 
     </div>
     <div class="back"></div> `;
-    gridContainer.appendChild(cardElement); // get element by id????????
+    gridContainer.appendChild(cardElement);
     cardElement.addEventListener("click", flipCard);
   }
 }

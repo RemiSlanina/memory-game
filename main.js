@@ -118,7 +118,6 @@ function printThankYouMessage() {
   console.log(`score: ${score}`);
   console.log(`((cards.length ) / 2): ${cards.length / 2}`);
   if (score !== cards.length / 2) return;
-  document.querySelector(
-    ".thank-you-message"
-  ).textContent = `Thank you for playing.`;
+  document.querySelector(".thank-you-message").textContent =
+    `Thank you for playing.`;
 }

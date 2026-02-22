@@ -1,58 +1,52 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&display=swap');
-
-body{
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: gray;
-    background-color: hsl(0, 0%, 90%);
-/* 
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: gray;
+  background-color: hsl(0, 0%, 90%);
+  /* 
     background-image: url("./assets/Stellar-Background.svg");
      */
-    color: #000;
-    color: hsl(0, 0%, 15%);
-    font-family: 'Libre Franklin', sans-serif;
+  color: #000;
+  color: hsl(0, 0%, 15%);
+  font-family: "Libre Franklin", sans-serif;
 }
-h1{
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
 }
-p{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-
-
-.actions{
-    display: flex;
-    justify-content: center;
-}
-.actions button{
-    font-size: 1.4rem;
-    padding: 8px 16px; 
-    border-radius: 10px;
-    background-color: black; 
-    background-color: #000;
-    background-color: hsl(0, 0%, 15%);
-    color: white;
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
+.actions {
+  display: flex;
+  justify-content: center;
+}
+.actions button {
+  font-size: 1.4rem;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: black;
+  background-color: #000;
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+}
 
-.thank-you-message{
-    font-family: 'Petit Formal Script', cursive;
+.thank-you-message {
+  font-family: "Petit Formal Script", cursive;
 }
 .manual-text {
-    font-weight: 200;
-    font-size: 1.2rem;
+  font-weight: 200;
+  font-size: 1.2rem;
 }
 
-
 .grid-container {
-/*     background-color: blue;
- */  display: grid;
+  /*     background-color: blue;
+ */
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   gap: 12px;
   padding: 12px;
@@ -60,8 +54,8 @@ p{
   justify-content: center;
   align-items: center;
   align-content: center;
-  max-width: 700px; 
-  margin: 0 auto; 
+  max-width: 700px;
+  margin: 0 auto;
   /* /center */
   perspective: 1000px; /* enables 3D look */
 }
@@ -70,11 +64,10 @@ p{
 .card {
   position: relative;
   width: 100%;
-  padding-top: 161px;       /* aspect ratio: height based on width */
+  padding-top: 161px; /* aspect ratio: height based on width */
   cursor: pointer;
   transform-style: preserve-3d;
 }
-
 
 .card .front,
 .card .back {

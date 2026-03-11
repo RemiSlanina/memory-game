@@ -104,6 +104,7 @@ function resetBoard() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
+  resetThankYouMessage();
 }
 // ****************** RESTART ******************
 function restart() {
@@ -120,4 +121,7 @@ function printThankYouMessage() {
   if (score !== cards.length / 2) return;
   document.querySelector(".thank-you-message").textContent =
     `Thank you for playing.`;
+}
+function resetThankYouMessage() {
+  document.querySelector(".thank-you-message").textContent = ``;
 }

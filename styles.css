@@ -108,3 +108,11 @@ p {
 .card.flipped .front {
   transform: rotateY(0deg);
 }
+
+footer {
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 40px;
+  color: hsl(0, 0%, 40%);
+}
